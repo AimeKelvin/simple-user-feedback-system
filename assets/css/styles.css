@@ -161,3 +161,209 @@ tr:hover {
 .pagination a:hover {
     background: #2980b9;
 }
+
+/* Admin Dashboard Layout */
+.admin-container {
+    width: 85%;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Layout: Table on Left, Graph on Right */
+.admin-layout {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+/* Table Section */
+.feedback-table {
+    flex: 2;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-table h3 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+/* Chart Section */
+.chart-container {
+    flex: 1;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    height: 320px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background: #3498db;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+tr:hover {
+    background: #e8f5ff;
+}
+
+/* Rating Colors */
+.rating-positive {
+    background-color: #d4edda !important; /* Green */
+}
+
+.rating-negative {
+    background-color: #f8d7da !important; /* Red */
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .admin-layout {
+        flex-direction: column;
+    }
+
+    .chart-container {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+/* Admin Dashboard Layout */
+.admin-container {
+    width: 85%;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Controls Section (Small and Compact) */
+.controls {
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.filters-form {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.control-select,
+.control-input,
+.control-button {
+    padding: 6px 12px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.control-button {
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+}
+
+.control-button:hover {
+    background-color: #2980b9;
+}
+
+.control-input {
+    width: 150px;
+}
+
+/* Table Section */
+.feedback-table {
+    flex: 2;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-table h3 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+/* Chart Section */
+.chart-container {
+    flex: 1;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    height: 320px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background: #3498db;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+tr:hover {
+    background: #e8f5ff;
+}
+
+/* Rating Colors */
+.rating-positive {
+    background-color: #d4edda !important; /* Green */
+}
+
+.rating-negative {
+    background-color: #f8d7da !important; /* Red */
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .admin-layout {
+        flex-direction: column;
+    }
+
+    .chart-container {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
