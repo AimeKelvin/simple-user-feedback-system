@@ -7,53 +7,68 @@
 }
 
 body {
-    background-color: #f0f2f5;
-    color: #333;
+    background-color: #000; /* Pure black */
+    color: #fff; /* White text */
     text-align: center;
 }
 
-/* Container Styling */
-.container {
-    width: 40%;
-    margin: 50px auto;
-    background: white;
+/* Containers */
+.container,
+.admin-container,
+.admin-login,
+.feedback-table,
+.chart-container,
+.controls {
+    background: #111;
+    color: #fff;
     padding: 30px;
     border-radius: 12px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease-in-out;
+    margin: 40px auto;
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.05);
 }
 
-.container:hover {
-    transform: scale(1.02);
+.container {
+    width: 40%;
 }
 
-h2 {
-    color: #2c3e50;
+.admin-container {
+    width: 85%;
+}
+
+.admin-login {
+    width: 30%;
+    margin-top: 100px;
+}
+
+h2, h3 {
+    color: #fff;
     margin-bottom: 20px;
 }
 
-/* Input Fields */
+/* Inputs & Textareas */
 input, select, textarea {
     width: 100%;
     padding: 12px;
     margin: 10px 0;
     border-radius: 6px;
-    border: 1px solid #ccc;
+    border: 1px solid #444;
+    background: #000;
+    color: #fff;
     font-size: 16px;
     transition: border 0.3s;
 }
 
 input:focus, select:focus, textarea:focus {
-    border: 1px solid #3498db;
+    border-color: #fff;
     outline: none;
 }
 
-/* Submit Button */
-button {
+/* Buttons */
+button, .control-button, .pagination a {
     width: 100%;
     padding: 12px;
-    background: #3498db;
-    color: white;
+    background: #fff;
+    color: #000;
     font-size: 18px;
     border: none;
     border-radius: 6px;
@@ -61,309 +76,13 @@ button {
     transition: background 0.3s;
 }
 
-button:hover {
-    background: #2980b9;
-}
-
-/* Admin Panel Styling */
-.admin-container {
-    width: 70%;
-    margin: 50px auto;
-    background: white;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-}
-
-.admin-login {
-    width: 30%;
-    margin: 100px auto;
-    background: white;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-}
-
-.admin-login input {
-    width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-}
-
-.admin-login button {
-    width: 100%;
-    padding: 12px;
-    background: #27ae60;
-    color: white;
-    font-size: 18px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.admin-login button:hover {
-    background: #219150;
-}
-
-/* Table Styling */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-
-th, td {
-    padding: 12px;
-    border: 1px solid #ddd;
-    text-align: center;
-}
-
-th {
-    background: #3498db;
-    color: white;
-}
-
-tr:nth-child(even) {
-    background: #f2f2f2;
-}
-
-tr:hover {
-    background: #e8f5ff;
-}
-
-/* Rating Colors */
-.rating-positive {
-    background-color: #d4edda !important; /* Green */
-}
-
-.rating-negative {
-    background-color: #f8d7da !important; /* Red */
-}
-
-.pagination {
-    margin-top: 20px;
-}
-
-.pagination a {
-    text-decoration: none;
-    padding: 8px 12px;
-    margin: 5px;
-    background: #3498db;
-    color: white;
-    border-radius: 4px;
-    transition: 0.3s;
-}
-
+button:hover,
+.control-button:hover,
 .pagination a:hover {
-    background: #2980b9;
+    background: #ccc;
+    color: #000;
 }
 
-/* Admin Dashboard Layout */
-.admin-container {
-    width: 85%;
-    margin: 40px auto;
-    background: white;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-}
 
-/* Layout: Table on Left, Graph on Right */
-.admin-layout {
-    display: flex;
-    gap: 20px;
-    justify-content: space-between;
-}
 
-/* Table Section */
-.feedback-table {
-    flex: 2;
-    padding: 15px;
-    background: #f8f9fa;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
 
-.feedback-table h3 {
-    text-align: center;
-    color: #2c3e50;
-}
-
-/* Chart Section */
-.chart-container {
-    flex: 1;
-    padding: 20px;
-    background: #f8f9fa;
-    border-radius: 10px;
-    height: 320px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-/* Table Styling */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
-}
-
-th, td {
-    padding: 12px;
-    border: 1px solid #ddd;
-    text-align: center;
-}
-
-th {
-    background: #3498db;
-    color: white;
-}
-
-tr:nth-child(even) {
-    background: #f2f2f2;
-}
-
-tr:hover {
-    background: #e8f5ff;
-}
-
-/* Rating Colors */
-.rating-positive {
-    background-color: #d4edda !important; /* Green */
-}
-
-.rating-negative {
-    background-color: #f8d7da !important; /* Red */
-}
-
-/* Responsive */
-@media (max-width: 900px) {
-    .admin-layout {
-        flex-direction: column;
-    }
-
-    .chart-container {
-        width: 100%;
-        margin-top: 20px;
-    }
-}
-
-/* Admin Dashboard Layout */
-.admin-container {
-    width: 85%;
-    margin: 40px auto;
-    background: white;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-}
-
-/* Controls Section (Small and Compact) */
-.controls {
-    margin-bottom: 20px;
-    padding: 10px;
-    background: #f8f9fa;
-    border-radius: 8px;
-}
-
-.filters-form {
-    display: flex;
-    gap: 10px;
-    justify-content: flex-start;
-}
-
-.control-select,
-.control-input,
-.control-button {
-    padding: 6px 12px;
-    font-size: 14px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.control-button {
-    background-color: #3498db;
-    color: white;
-    cursor: pointer;
-}
-
-.control-button:hover {
-    background-color: #2980b9;
-}
-
-.control-input {
-    width: 150px;
-}
-
-/* Table Section */
-.feedback-table {
-    flex: 2;
-    padding: 15px;
-    background: #f8f9fa;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.feedback-table h3 {
-    text-align: center;
-    color: #2c3e50;
-}
-
-/* Chart Section */
-.chart-container {
-    flex: 1;
-    padding: 20px;
-    background: #f8f9fa;
-    border-radius: 10px;
-    height: 320px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-/* Table Styling */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
-}
-
-th, td {
-    padding: 12px;
-    border: 1px solid #ddd;
-    text-align: center;
-}
-
-th {
-    background: #3498db;
-    color: white;
-}
-
-tr:nth-child(even) {
-    background: #f2f2f2;
-}
-
-tr:hover {
-    background: #e8f5ff;
-}
-
-/* Rating Colors */
-.rating-positive {
-    background-color: #d4edda !important; /* Green */
-}
-
-.rating-negative {
-    background-color: #f8d7da !important; /* Red */
-}
-
-/* Responsive */
-@media (max-width: 900px) {
-    .admin-layout {
-        flex-direction: column;
-    }
-
-    .chart-container {
-        width: 100%;
-        margin-top: 20px;
-    }
-}
