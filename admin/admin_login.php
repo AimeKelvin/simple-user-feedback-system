@@ -8,7 +8,7 @@ $admin_pass = "password123";
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($_POST['username'] === $admin_user && $_POST['password'] === $admin_pass) {
         $_SESSION['loggedin'] = true;
-        header("Location: admin.php");
+        header("Location: index.php");
         exit();
     } else {
         $error = "Invalid username or password.";
